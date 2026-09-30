@@ -17,7 +17,7 @@ public class HelloController {
     @GetMapping("/printer-test")
     public Printer printerTest()
     {
-        return new Printer(1, "RICOH SP377SFNw", "192.168.103.26", "MONO", true);
+        return new Printer(1, "RICOH", "IP.Example", "SP377SFNw", true);
     }
 
 }
