@@ -1,4 +1,3 @@
-[README.md](https://github.com/user-attachments/files/32834392/README.md)
 # PrintMonitor
 
 Sistema de monitoramento de impressoras para ambientes com muitos equipamentos e redes separadas (caso de uso: uma faculdade privada). O objetivo é acompanhar o uso e os recursos de cada impressora (páginas impressas, toner, papel) e gerar relatórios diários, mensais e anuais em gráficos.
@@ -97,7 +96,7 @@ spring.jpa.show-sql=true
 | GET | `/hello` | Teste de funcionamento do servidor | pronto |
 | GET | `/printer-test` | Retorna uma impressora fixa em JSON (teste) | pronto |
 | GET | `/printers` | Lista as impressoras do banco | pronto |
-| POST | `/printers` | Cadastra uma impressora | planejado |
+| POST | `/printers` | Cadastra uma impressora | pronto |
 
 ## Modelagem (UML)
 
@@ -116,7 +115,7 @@ Decisão de projeto: a **Leitura** (retrato tirado a cada coleta) é separada da
 - [x] Primeiro endpoint (Hello World)
 - [x] Entidade `Printer` e repositório JPA
 - [x] Listagem de impressoras (`GET /printers`)
-- [ ] Cadastro de impressoras (`POST /printers`)
+- [x] Cadastro de impressoras (`POST /printers`)
 - [ ] Padronizar nomes do código e do UML (português ou inglês)
 - [ ] Persistência em arquivo / migração para PostgreSQL ou MySQL
 - [ ] Entidades `Leitura`, `NivelSuprimento`, `StatusBandeja`, `Alerta`
