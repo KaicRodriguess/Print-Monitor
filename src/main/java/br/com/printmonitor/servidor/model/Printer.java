@@ -7,7 +7,7 @@ public class Printer {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private long printerId;
+    private Long printerId;
 
     private String printerName;
     private String printerIp;
@@ -16,7 +16,7 @@ public class Printer {
 
     public Printer() {}
 
-    public Printer(long printerId, String printerName, String printerIp, String printerModel, Boolean printerStatus) {
+    public Printer(Long printerId, String printerName, String printerIp, String printerModel, Boolean printerStatus) {
         this.printerId = printerId;
         this.printerName = printerName;
         this.printerIp = printerIp;
@@ -28,7 +28,7 @@ public class Printer {
         return printerId;
     }
 
-    public void setPrinterId(long printerId) {
+    public void setPrinterId(Long printerId) {
         this.printerId = printerId;
     }
 

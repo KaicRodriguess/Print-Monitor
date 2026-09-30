@@ -3,6 +3,8 @@ package br.com.printmonitor.servidor.controller;
 import br.com.printmonitor.servidor.model.Printer;
 import br.com.printmonitor.servidor.repository.PrinterRepository;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
 
 import java.util.List;
@@ -22,4 +24,11 @@ public class PrintController {
     {
         return printerRepository.findAll();
     }
+
+    @PostMapping("/printers")
+    public Printer registerPrinter(@RequestBody Printer printer)
+    {
+        return printerRepository.save(printer);
+    }
+
 }
